@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A4CCBA7324DDB54400AF1E99 /* Sailor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CCBA6924DDB54400AF1E99 /* Sailor.framework */; };
-		A4CCBA7824DDB54400AF1E99 /* SailorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CCBA7724DDB54400AF1E99 /* SailorTests.swift */; };
-		A4CCBA7A24DDB54400AF1E99 /* Sailor.h in Headers */ = {isa = PBXBuildFile; fileRef = A4CCBA6C24DDB54400AF1E99 /* Sailor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A4CCBA8424DDB5A900AF1E99 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CCBA8324DDB5A900AF1E99 /* FeedItem.swift */; };
 		A4CCBA8624DDB5E300AF1E99 /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CCBA8524DDB5E300AF1E99 /* FeedLoader.swift */; };
 		A4CCBA8924DDB7B900AF1E99 /* RemoteFeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CCBA8824DDB7B900AF1E99 /* RemoteFeedLoaderTests.swift */; };
@@ -28,10 +26,8 @@
 
 /* Begin PBXFileReference section */
 		A4CCBA6924DDB54400AF1E99 /* Sailor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sailor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4CCBA6C24DDB54400AF1E99 /* Sailor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sailor.h; sourceTree = "<group>"; };
 		A4CCBA6D24DDB54400AF1E99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4CCBA7224DDB54400AF1E99 /* SailorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SailorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4CCBA7724DDB54400AF1E99 /* SailorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SailorTests.swift; sourceTree = "<group>"; };
 		A4CCBA7924DDB54400AF1E99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4CCBA8324DDB5A900AF1E99 /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		A4CCBA8524DDB5E300AF1E99 /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
@@ -80,9 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				A4CCBA8A24DDC76F00AF1E99 /* Feed API */,
-				A4CCBA6C24DDB54400AF1E99 /* Sailor.h */,
-				A4CCBA6D24DDB54400AF1E99 /* Info.plist */,
 				A4CCBA8724DDB60C00AF1E99 /* Feed Feature */,
+				A4CCBA6D24DDB54400AF1E99 /* Info.plist */,
 			);
 			path = Sailor;
 			sourceTree = "<group>";
@@ -90,7 +85,6 @@
 		A4CCBA7624DDB54400AF1E99 /* SailorTests */ = {
 			isa = PBXGroup;
 			children = (
-				A4CCBA7724DDB54400AF1E99 /* SailorTests.swift */,
 				A4CCBA8824DDB7B900AF1E99 /* RemoteFeedLoaderTests.swift */,
 				A4CCBA7924DDB54400AF1E99 /* Info.plist */,
 			);
@@ -121,7 +115,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4CCBA7A24DDB54400AF1E99 /* Sailor.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,7 +227,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4CCBA8924DDB7B900AF1E99 /* RemoteFeedLoaderTests.swift in Sources */,
-				A4CCBA7824DDB54400AF1E99 /* SailorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
