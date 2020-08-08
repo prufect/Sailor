@@ -168,6 +168,8 @@ class RemoteFeedLoaderTests: XCTestCase {
         file: StaticString = #filePath,
         line: UInt = #line)
     {
+        let exp = expectation(description: "Wait for Load to Complete")
+        
         sut.load { capturedResult in
             switch (capturedResult, expectedResult) {
             case let (.success(capturedItems), .success(expectedItems)):
@@ -177,9 +179,13 @@ class RemoteFeedLoaderTests: XCTestCase {
             default:
                 XCTFail("Failure", file: file, line: line)
             }
+            
+            exp.fulfill()
         }
         
         action()
+        
+        wait(for: [exp], timeout: 1.0)
     }
     
     private class HTTPClientSpy: HTTPClient {
