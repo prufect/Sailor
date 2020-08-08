@@ -89,7 +89,7 @@
 		A4CCBA7624DDB54400AF1E99 /* SailorTests */ = {
 			isa = PBXGroup;
 			children = (
-				A4CCBA8824DDB7B900AF1E99 /* RemoteFeedLoaderTests.swift */,
+				A4CCBA9124DF245200AF1E99 /* Feed API */,
 				A4CCBA7924DDB54400AF1E99 /* Info.plist */,
 			);
 			path = SailorTests;
@@ -110,6 +110,14 @@
 				A4CCBA8B24DDC77B00AF1E99 /* RemoteFeedLoader.swift */,
 				A4CCBA8D24DF1AD900AF1E99 /* HTTPClient.swift */,
 				A4CCBA8F24DF1AE300AF1E99 /* FeedItemsMapper.swift */,
+			);
+			path = "Feed API";
+			sourceTree = "<group>";
+		};
+		A4CCBA9124DF245200AF1E99 /* Feed API */ = {
+			isa = PBXGroup;
+			children = (
+				A4CCBA8824DDB7B900AF1E99 /* RemoteFeedLoaderTests.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
