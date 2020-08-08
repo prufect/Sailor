@@ -163,17 +163,23 @@ class RemoteFeedLoaderTests: XCTestCase {
     
     private func expect(
         _ sut: RemoteFeedLoader,
-        toCompleteWith result: RemoteFeedLoader.Result,
+        toCompleteWith expectedResult: RemoteFeedLoader.Result,
         when action: () -> Void,
         file: StaticString = #filePath,
         line: UInt = #line)
     {
-        var capturedResults: [RemoteFeedLoader.Result] = []
-        sut.load { capturedResults.append($0) }
+        sut.load { capturedResult in
+            switch (capturedResult, expectedResult) {
+            case let (.success(capturedItems), .success(expectedItems)):
+                XCTAssertEqual(capturedItems, expectedItems, file: file, line: line)
+            case let (.failure(capturedError), .failure(expectedError)):
+                XCTAssertEqual(capturedError, expectedError, file: file, line: line)
+            default:
+                XCTFail("Failure", file: file, line: line)
+            }
+        }
         
         action()
-        
-        XCTAssertEqual(capturedResults, [result], file: file, line: line)
     }
     
     private class HTTPClientSpy: HTTPClient {
