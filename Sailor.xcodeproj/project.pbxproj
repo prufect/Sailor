@@ -16,6 +16,7 @@
 		A4CCBA9024DF1AE300AF1E99 /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CCBA8F24DF1AE300AF1E99 /* FeedItemsMapper.swift */; };
 		A4CCBA9324E066B600AF1E99 /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CCBA9224E066B600AF1E99 /* URLSessionHTTPClientTests.swift */; };
 		A4CCBA9624E087CE00AF1E99 /* XCTestCase+MemoryLeakTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CCBA9524E087CE00AF1E99 /* XCTestCase+MemoryLeakTracker.swift */; };
+		A4CCBA9824E0B07800AF1E99 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CCBA9724E0B07800AF1E99 /* URLSessionHTTPClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		A4CCBA8F24DF1AE300AF1E99 /* FeedItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMapper.swift; sourceTree = "<group>"; };
 		A4CCBA9224E066B600AF1E99 /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
 		A4CCBA9524E087CE00AF1E99 /* XCTestCase+MemoryLeakTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracker.swift"; sourceTree = "<group>"; };
+		A4CCBA9724E0B07800AF1E99 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				A4CCBA8B24DDC77B00AF1E99 /* RemoteFeedLoader.swift */,
 				A4CCBA8D24DF1AD900AF1E99 /* HTTPClient.swift */,
 				A4CCBA8F24DF1AE300AF1E99 /* FeedItemsMapper.swift */,
+				A4CCBA9724E0B07800AF1E99 /* URLSessionHTTPClient.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				A4CCBA8C24DDC77B00AF1E99 /* RemoteFeedLoader.swift in Sources */,
 				A4CCBA8E24DF1AD900AF1E99 /* HTTPClient.swift in Sources */,
 				A4CCBA8424DDB5A900AF1E99 /* FeedItem.swift in Sources */,
+				A4CCBA9824E0B07800AF1E99 /* URLSessionHTTPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
