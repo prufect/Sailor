@@ -17,10 +17,19 @@
 		A4CCBA9324E066B600AF1E99 /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CCBA9224E066B600AF1E99 /* URLSessionHTTPClientTests.swift */; };
 		A4CCBA9624E087CE00AF1E99 /* XCTestCase+MemoryLeakTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CCBA9524E087CE00AF1E99 /* XCTestCase+MemoryLeakTracker.swift */; };
 		A4CCBA9824E0B07800AF1E99 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CCBA9724E0B07800AF1E99 /* URLSessionHTTPClient.swift */; };
+		A4CCBAA024E0FA1100AF1E99 /* SailorAPIEndToEndTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CCBA9F24E0FA1100AF1E99 /* SailorAPIEndToEndTests.swift */; };
+		A4CCBAA224E0FA1100AF1E99 /* Sailor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CCBA6924DDB54400AF1E99 /* Sailor.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		A4CCBA7424DDB54400AF1E99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4CCBA6024DDB54300AF1E99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4CCBA6824DDB54300AF1E99;
+			remoteInfo = Sailor;
+		};
+		A4CCBAA324E0FA1100AF1E99 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A4CCBA6024DDB54300AF1E99 /* Project object */;
 			proxyType = 1;
@@ -43,6 +52,9 @@
 		A4CCBA9224E066B600AF1E99 /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
 		A4CCBA9524E087CE00AF1E99 /* XCTestCase+MemoryLeakTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracker.swift"; sourceTree = "<group>"; };
 		A4CCBA9724E0B07800AF1E99 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
+		A4CCBA9D24E0FA1100AF1E99 /* SailorAPIEndToEndTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SailorAPIEndToEndTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4CCBA9F24E0FA1100AF1E99 /* SailorAPIEndToEndTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SailorAPIEndToEndTests.swift; sourceTree = "<group>"; };
+		A4CCBAA124E0FA1100AF1E99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +73,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A4CCBA9A24E0FA1100AF1E99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4CCBAA224E0FA1100AF1E99 /* Sailor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -69,6 +89,7 @@
 			children = (
 				A4CCBA6B24DDB54400AF1E99 /* Sailor */,
 				A4CCBA7624DDB54400AF1E99 /* SailorTests */,
+				A4CCBA9E24E0FA1100AF1E99 /* SailorAPIEndToEndTests */,
 				A4CCBA6A24DDB54400AF1E99 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,6 +99,7 @@
 			children = (
 				A4CCBA6924DDB54400AF1E99 /* Sailor.framework */,
 				A4CCBA7224DDB54400AF1E99 /* SailorTests.xctest */,
+				A4CCBA9D24E0FA1100AF1E99 /* SailorAPIEndToEndTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,6 +161,15 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		A4CCBA9E24E0FA1100AF1E99 /* SailorAPIEndToEndTests */ = {
+			isa = PBXGroup;
+			children = (
+				A4CCBA9F24E0FA1100AF1E99 /* SailorAPIEndToEndTests.swift */,
+				A4CCBAA124E0FA1100AF1E99 /* Info.plist */,
+			);
+			path = SailorAPIEndToEndTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -188,6 +219,24 @@
 			productReference = A4CCBA7224DDB54400AF1E99 /* SailorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		A4CCBA9C24E0FA1100AF1E99 /* SailorAPIEndToEndTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4CCBAA524E0FA1100AF1E99 /* Build configuration list for PBXNativeTarget "SailorAPIEndToEndTests" */;
+			buildPhases = (
+				A4CCBA9924E0FA1100AF1E99 /* Sources */,
+				A4CCBA9A24E0FA1100AF1E99 /* Frameworks */,
+				A4CCBA9B24E0FA1100AF1E99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4CCBAA424E0FA1100AF1E99 /* PBXTargetDependency */,
+			);
+			name = SailorAPIEndToEndTests;
+			productName = SailorAPIEndToEndTests;
+			productReference = A4CCBA9D24E0FA1100AF1E99 /* SailorAPIEndToEndTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,6 +251,9 @@
 						LastSwiftMigration = 1200;
 					};
 					A4CCBA7124DDB54400AF1E99 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					A4CCBA9C24E0FA1100AF1E99 = {
 						CreatedOnToolsVersion = 12.0;
 					};
 				};
@@ -221,6 +273,7 @@
 			targets = (
 				A4CCBA6824DDB54300AF1E99 /* Sailor */,
 				A4CCBA7124DDB54400AF1E99 /* SailorTests */,
+				A4CCBA9C24E0FA1100AF1E99 /* SailorAPIEndToEndTests */,
 			);
 		};
 /* End PBXProject section */
@@ -234,6 +287,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A4CCBA7024DDB54400AF1E99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4CCBA9B24E0FA1100AF1E99 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -266,6 +326,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A4CCBA9924E0FA1100AF1E99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4CCBAA024E0FA1100AF1E99 /* SailorAPIEndToEndTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -273,6 +341,11 @@
 			isa = PBXTargetDependency;
 			target = A4CCBA6824DDB54300AF1E99 /* Sailor */;
 			targetProxy = A4CCBA7424DDB54400AF1E99 /* PBXContainerItemProxy */;
+		};
+		A4CCBAA424E0FA1100AF1E99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4CCBA6824DDB54300AF1E99 /* Sailor */;
+			targetProxy = A4CCBAA324E0FA1100AF1E99 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -487,6 +560,42 @@
 			};
 			name = Release;
 		};
+		A4CCBAA624E0FA1100AF1E99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4479HNAQMJ;
+				INFOPLIST_FILE = SailorAPIEndToEndTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.krezzi.SailorAPIEndToEndTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A4CCBAA724E0FA1100AF1E99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4479HNAQMJ;
+				INFOPLIST_FILE = SailorAPIEndToEndTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.krezzi.SailorAPIEndToEndTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -513,6 +622,15 @@
 			buildConfigurations = (
 				A4CCBA8124DDB54400AF1E99 /* Debug */,
 				A4CCBA8224DDB54400AF1E99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4CCBAA524E0FA1100AF1E99 /* Build configuration list for PBXNativeTarget "SailorAPIEndToEndTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4CCBAA624E0FA1100AF1E99 /* Debug */,
+				A4CCBAA724E0FA1100AF1E99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
