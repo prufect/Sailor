@@ -15,6 +15,8 @@
 		A4B03F5724E1CABE001805AF /* LoadFeedFromCacheUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B03F5624E1CABE001805AF /* LoadFeedFromCacheUseCaseTests.swift */; };
 		A4B03F5A24E1CB72001805AF /* FeedStoreSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B03F5924E1CB72001805AF /* FeedStoreSpy.swift */; };
 		A4B03F5C24E1FBF6001805AF /* ValidateFeedCacheUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B03F5B24E1FBF6001805AF /* ValidateFeedCacheUseCaseTests.swift */; };
+		A4B03F5E24E2011D001805AF /* FeedCacheTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B03F5D24E2011D001805AF /* FeedCacheTestHelpers.swift */; };
+		A4B03F6024E2020D001805AF /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B03F5F24E2020D001805AF /* SharedTestHelpers.swift */; };
 		A4CCBA7324DDB54400AF1E99 /* Sailor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CCBA6924DDB54400AF1E99 /* Sailor.framework */; };
 		A4CCBA8424DDB5A900AF1E99 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CCBA8324DDB5A900AF1E99 /* FeedItem.swift */; };
 		A4CCBA8624DDB5E300AF1E99 /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CCBA8524DDB5E300AF1E99 /* FeedLoader.swift */; };
@@ -56,6 +58,8 @@
 		A4B03F5624E1CABE001805AF /* LoadFeedFromCacheUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFeedFromCacheUseCaseTests.swift; sourceTree = "<group>"; };
 		A4B03F5924E1CB72001805AF /* FeedStoreSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStoreSpy.swift; sourceTree = "<group>"; };
 		A4B03F5B24E1FBF6001805AF /* ValidateFeedCacheUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateFeedCacheUseCaseTests.swift; sourceTree = "<group>"; };
+		A4B03F5D24E2011D001805AF /* FeedCacheTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCacheTestHelpers.swift; sourceTree = "<group>"; };
+		A4B03F5F24E2020D001805AF /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
 		A4CCBA6924DDB54400AF1E99 /* Sailor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sailor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4CCBA6D24DDB54400AF1E99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4CCBA7224DDB54400AF1E99 /* SailorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SailorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				A4B03F5924E1CB72001805AF /* FeedStoreSpy.swift */,
+				A4B03F5D24E2011D001805AF /* FeedCacheTestHelpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -206,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				A4CCBA9524E087CE00AF1E99 /* XCTestCase+MemoryLeakTracker.swift */,
+				A4B03F5F24E2020D001805AF /* SharedTestHelpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -373,10 +379,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4B03F5E24E2011D001805AF /* FeedCacheTestHelpers.swift in Sources */,
 				A4B03F5C24E1FBF6001805AF /* ValidateFeedCacheUseCaseTests.swift in Sources */,
 				A4CCBA8924DDB7B900AF1E99 /* LoadFeedFromRemoteUseCaseTests.swift in Sources */,
 				A4CCBA9624E087CE00AF1E99 /* XCTestCase+MemoryLeakTracker.swift in Sources */,
 				A4B03F5A24E1CB72001805AF /* FeedStoreSpy.swift in Sources */,
+				A4B03F6024E2020D001805AF /* SharedTestHelpers.swift in Sources */,
 				A49E809324E134E70095017C /* CacheFeedUseCaseTests.swift in Sources */,
 				A4B03F5724E1CABE001805AF /* LoadFeedFromCacheUseCaseTests.swift in Sources */,
 				A4CCBA9324E066B600AF1E99 /* URLSessionHTTPClientTests.swift in Sources */,
