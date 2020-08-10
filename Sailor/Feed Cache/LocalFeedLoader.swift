@@ -65,7 +65,6 @@ public final class LocalFeedLoader {
             default: break
             }
         }
-        store.deleteCachedFeed { _ in }
     }
     
     private func validate(_ timestamp: Date) -> Bool {
