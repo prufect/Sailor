@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A49E809324E134E70095017C /* CacheFeedUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E809224E134E70095017C /* CacheFeedUseCaseTests.swift */; };
 		A4CCBA7324DDB54400AF1E99 /* Sailor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CCBA6924DDB54400AF1E99 /* Sailor.framework */; };
 		A4CCBA8424DDB5A900AF1E99 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CCBA8324DDB5A900AF1E99 /* FeedItem.swift */; };
 		A4CCBA8624DDB5E300AF1E99 /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CCBA8524DDB5E300AF1E99 /* FeedLoader.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A49E809224E134E70095017C /* CacheFeedUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFeedUseCaseTests.swift; sourceTree = "<group>"; };
 		A4CCBA6924DDB54400AF1E99 /* Sailor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sailor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4CCBA6D24DDB54400AF1E99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4CCBA7224DDB54400AF1E99 /* SailorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SailorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +87,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A49E809124E134CA0095017C /* Feed Cache */ = {
+			isa = PBXGroup;
+			children = (
+				A49E809224E134E70095017C /* CacheFeedUseCaseTests.swift */,
+			);
+			path = "Feed Cache";
+			sourceTree = "<group>";
+		};
 		A4CCBA5F24DDB54300AF1E99 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +128,7 @@
 		A4CCBA7624DDB54400AF1E99 /* SailorTests */ = {
 			isa = PBXGroup;
 			children = (
+				A49E809124E134CA0095017C /* Feed Cache */,
 				A4CCBA9424E087BD00AF1E99 /* Helpers */,
 				A4CCBA9124DF245200AF1E99 /* Feed API */,
 				A4CCBA7924DDB54400AF1E99 /* Info.plist */,
@@ -323,6 +334,7 @@
 			files = (
 				A4CCBA8924DDB7B900AF1E99 /* LoadFeedFromRemoteUseCaseTests.swift in Sources */,
 				A4CCBA9624E087CE00AF1E99 /* XCTestCase+MemoryLeakTracker.swift in Sources */,
+				A49E809324E134E70095017C /* CacheFeedUseCaseTests.swift in Sources */,
 				A4CCBA9324E066B600AF1E99 /* URLSessionHTTPClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
