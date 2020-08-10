@@ -133,13 +133,13 @@ class LoadFeedFromRemoteUseCaseTests: XCTestCase {
         id: UUID,
         description: String? = nil,
         location: String? = nil,
-        imageURL: URL) -> (item: FeedItem, json: [String: Any])
+        imageURL: URL) -> (item: FeedImage, json: [String: Any])
     {
-        let item = FeedItem(
+        let item = FeedImage(
             id: id,
             description: description,
             location: location,
-            imageURL: imageURL
+            url: imageURL
         )
         
         let json: [String: Any] = [
