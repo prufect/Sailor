@@ -128,8 +128,8 @@
 		A4CCBA7624DDB54400AF1E99 /* SailorTests */ = {
 			isa = PBXGroup;
 			children = (
-				A49E809124E134CA0095017C /* Feed Cache */,
 				A4CCBA9424E087BD00AF1E99 /* Helpers */,
+				A49E809124E134CA0095017C /* Feed Cache */,
 				A4CCBA9124DF245200AF1E99 /* Feed API */,
 				A4CCBA7924DDB54400AF1E99 /* Info.plist */,
 			);
