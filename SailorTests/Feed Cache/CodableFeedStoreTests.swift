@@ -8,7 +8,7 @@
 import XCTest
 import Sailor
 
-class CodableFeedStore {
+class CodableFeedStore: FeedStore {
     
     private struct Cache: Codable {
         let feed: [CodableFeedImage]
