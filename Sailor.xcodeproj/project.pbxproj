@@ -32,6 +32,7 @@
 		A4CCBAA024E0FA1100AF1E99 /* SailorAPIEndToEndTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CCBA9F24E0FA1100AF1E99 /* SailorAPIEndToEndTests.swift */; };
 		A4CCBAA224E0FA1100AF1E99 /* Sailor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CCBA6924DDB54400AF1E99 /* Sailor.framework */; };
 		A4CCBAA824E0FE3A00AF1E99 /* XCTestCase+MemoryLeakTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CCBA9524E087CE00AF1E99 /* XCTestCase+MemoryLeakTracker.swift */; };
+		A4D31CB824E30D7B0082D798 /* CodableFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D31CB724E30D7B0082D798 /* CodableFeedStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		A4CCBA9D24E0FA1100AF1E99 /* SailorAPIEndToEndTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SailorAPIEndToEndTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4CCBA9F24E0FA1100AF1E99 /* SailorAPIEndToEndTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SailorAPIEndToEndTests.swift; sourceTree = "<group>"; };
 		A4CCBAA124E0FA1100AF1E99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4D31CB724E30D7B0082D798 /* CodableFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableFeedStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				A4AEA4E624E1B85000A51D98 /* FeedStore.swift */,
 				A4AEA4EA24E1C48800A51D98 /* LocalFeedImage.swift */,
 				A4B03F6124E20E8A001805AF /* FeedCachePolicy.swift */,
+				A4D31CB724E30D7B0082D798 /* CodableFeedStore.swift */,
 			);
 			path = "Feed Cache";
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				A4AEA4EB24E1C48800A51D98 /* LocalFeedImage.swift in Sources */,
 				A4AEA4E724E1B85000A51D98 /* FeedStore.swift in Sources */,
 				A4AEA4E524E1B7BD00A51D98 /* LocalFeedLoader.swift in Sources */,
+				A4D31CB824E30D7B0082D798 /* CodableFeedStore.swift in Sources */,
 				A4CCBA8E24DF1AD900AF1E99 /* HTTPClient.swift in Sources */,
 				A4CCBA8424DDB5A900AF1E99 /* FeedItem.swift in Sources */,
 				A4CCBA9824E0B07800AF1E99 /* URLSessionHTTPClient.swift in Sources */,
