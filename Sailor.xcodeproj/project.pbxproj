@@ -33,6 +33,7 @@
 		A4CCBAA224E0FA1100AF1E99 /* Sailor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CCBA6924DDB54400AF1E99 /* Sailor.framework */; };
 		A4CCBAA824E0FE3A00AF1E99 /* XCTestCase+MemoryLeakTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CCBA9524E087CE00AF1E99 /* XCTestCase+MemoryLeakTracker.swift */; };
 		A4D31CB824E30D7B0082D798 /* CodableFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D31CB724E30D7B0082D798 /* CodableFeedStore.swift */; };
+		A4D31CBA24E321900082D798 /* FeedStoreSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D31CB924E321900082D798 /* FeedStoreSpecs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		A4CCBA9F24E0FA1100AF1E99 /* SailorAPIEndToEndTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SailorAPIEndToEndTests.swift; sourceTree = "<group>"; };
 		A4CCBAA124E0FA1100AF1E99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4D31CB724E30D7B0082D798 /* CodableFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableFeedStore.swift; sourceTree = "<group>"; };
+		A4D31CB924E321900082D798 /* FeedStoreSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStoreSpecs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				A4B03F5624E1CABE001805AF /* LoadFeedFromCacheUseCaseTests.swift */,
 				A4B03F5B24E1FBF6001805AF /* ValidateFeedCacheUseCaseTests.swift */,
 				A4B03F6324E22165001805AF /* CodableFeedStoreTests.swift */,
+				A4D31CB924E321900082D798 /* FeedStoreSpecs.swift */,
 			);
 			path = "Feed Cache";
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 				A4B03F6024E2020D001805AF /* SharedTestHelpers.swift in Sources */,
 				A49E809324E134E70095017C /* CacheFeedUseCaseTests.swift in Sources */,
 				A4B03F5724E1CABE001805AF /* LoadFeedFromCacheUseCaseTests.swift in Sources */,
+				A4D31CBA24E321900082D798 /* FeedStoreSpecs.swift in Sources */,
 				A4CCBA9324E066B600AF1E99 /* URLSessionHTTPClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

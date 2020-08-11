@@ -8,7 +8,7 @@
 import XCTest
 import Sailor
 
-class CodableFeedStoreTests: XCTestCase {
+class CodableFeedStoreTests: XCTestCase, FailableFeedStore {
     
     override func setUp() {
         super.setUp()
@@ -91,7 +91,19 @@ class CodableFeedStoreTests: XCTestCase {
         let timestamp = Date()
         
         let insertionError = insert((feed, timestamp), to: sut)
+        
         XCTAssertNotNil(insertionError, "Expected to insert cache successfully")
+    }
+    
+    func test_insert_hasNoSideEffectsOnInsertionError() {
+        let invalidStoreURL = URL(string: "invalid://store-url")!
+        let sut = makeSUT(storeURL: invalidStoreURL)
+        let feed = uniqueImageFeed().local
+        let timestamp = Date()
+        
+        insert((feed, timestamp), to: sut)
+        
+        expect(sut, toRetrieve: .empty)
     }
     
     func test_delete_hasNoSideEffectsOnEmptyCache() {
