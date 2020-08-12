@@ -35,6 +35,8 @@
 		A4D31CB824E30D7B0082D798 /* CodableFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D31CB724E30D7B0082D798 /* CodableFeedStore.swift */; };
 		A4D31CBA24E321900082D798 /* FeedStoreSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D31CB924E321900082D798 /* FeedStoreSpecs.swift */; };
 		A4D31CBC24E322390082D798 /* XCTestCase+FeedStoreSpecsHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D31CBB24E322390082D798 /* XCTestCase+FeedStoreSpecsHelpers.swift */; };
+		A4D31CCF24E457060082D798 /* SailorCacheIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D31CCE24E457060082D798 /* SailorCacheIntegrationTests.swift */; };
+		A4D31CD124E457060082D798 /* Sailor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CCBA6924DDB54400AF1E99 /* Sailor.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,13 @@
 			remoteInfo = Sailor;
 		};
 		A4CCBAA324E0FA1100AF1E99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4CCBA6024DDB54300AF1E99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4CCBA6824DDB54300AF1E99;
+			remoteInfo = Sailor;
+		};
+		A4D31CD224E457060082D798 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A4CCBA6024DDB54300AF1E99 /* Project object */;
 			proxyType = 1;
@@ -86,6 +95,9 @@
 		A4D31CB724E30D7B0082D798 /* CodableFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableFeedStore.swift; sourceTree = "<group>"; };
 		A4D31CB924E321900082D798 /* FeedStoreSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStoreSpecs.swift; sourceTree = "<group>"; };
 		A4D31CBB24E322390082D798 /* XCTestCase+FeedStoreSpecsHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FeedStoreSpecsHelpers.swift"; sourceTree = "<group>"; };
+		A4D31CCC24E457060082D798 /* SailorCacheIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SailorCacheIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4D31CCE24E457060082D798 /* SailorCacheIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SailorCacheIntegrationTests.swift; sourceTree = "<group>"; };
+		A4D31CD024E457060082D798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +121,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4CCBAA224E0FA1100AF1E99 /* Sailor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4D31CC924E457060082D798 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4D31CD124E457060082D798 /* Sailor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +176,7 @@
 				A4CCBA6B24DDB54400AF1E99 /* Sailor */,
 				A4CCBA7624DDB54400AF1E99 /* SailorTests */,
 				A4CCBA9E24E0FA1100AF1E99 /* SailorAPIEndToEndTests */,
+				A4D31CCD24E457060082D798 /* SailorCacheIntegrationTests */,
 				A4CCBA6A24DDB54400AF1E99 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -166,6 +187,7 @@
 				A4CCBA6924DDB54400AF1E99 /* Sailor.framework */,
 				A4CCBA7224DDB54400AF1E99 /* SailorTests.xctest */,
 				A4CCBA9D24E0FA1100AF1E99 /* SailorAPIEndToEndTests.xctest */,
+				A4D31CCC24E457060082D798 /* SailorCacheIntegrationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -240,6 +262,15 @@
 			path = SailorAPIEndToEndTests;
 			sourceTree = "<group>";
 		};
+		A4D31CCD24E457060082D798 /* SailorCacheIntegrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				A4D31CCE24E457060082D798 /* SailorCacheIntegrationTests.swift */,
+				A4D31CD024E457060082D798 /* Info.plist */,
+			);
+			path = SailorCacheIntegrationTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -307,13 +338,31 @@
 			productReference = A4CCBA9D24E0FA1100AF1E99 /* SailorAPIEndToEndTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		A4D31CCB24E457060082D798 /* SailorCacheIntegrationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4D31CD424E457060082D798 /* Build configuration list for PBXNativeTarget "SailorCacheIntegrationTests" */;
+			buildPhases = (
+				A4D31CC824E457060082D798 /* Sources */,
+				A4D31CC924E457060082D798 /* Frameworks */,
+				A4D31CCA24E457060082D798 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4D31CD324E457060082D798 /* PBXTargetDependency */,
+			);
+			name = SailorCacheIntegrationTests;
+			productName = SailorCacheIntegrationTests;
+			productReference = A4D31CCC24E457060082D798 /* SailorCacheIntegrationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		A4CCBA6024DDB54300AF1E99 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1200;
+				LastSwiftUpdateCheck = 1160;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					A4CCBA6824DDB54300AF1E99 = {
@@ -325,6 +374,9 @@
 					};
 					A4CCBA9C24E0FA1100AF1E99 = {
 						CreatedOnToolsVersion = 12.0;
+					};
+					A4D31CCB24E457060082D798 = {
+						CreatedOnToolsVersion = 11.6;
 					};
 				};
 			};
@@ -344,6 +396,7 @@
 				A4CCBA6824DDB54300AF1E99 /* Sailor */,
 				A4CCBA7124DDB54400AF1E99 /* SailorTests */,
 				A4CCBA9C24E0FA1100AF1E99 /* SailorAPIEndToEndTests */,
+				A4D31CCB24E457060082D798 /* SailorCacheIntegrationTests */,
 			);
 		};
 /* End PBXProject section */
@@ -364,6 +417,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A4CCBA9B24E0FA1100AF1E99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4D31CCA24E457060082D798 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -420,6 +480,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A4D31CC824E457060082D798 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4D31CCF24E457060082D798 /* SailorCacheIntegrationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -432,6 +500,11 @@
 			isa = PBXTargetDependency;
 			target = A4CCBA6824DDB54300AF1E99 /* Sailor */;
 			targetProxy = A4CCBAA324E0FA1100AF1E99 /* PBXContainerItemProxy */;
+		};
+		A4D31CD324E457060082D798 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4CCBA6824DDB54300AF1E99 /* Sailor */;
+			targetProxy = A4D31CD224E457060082D798 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -688,6 +761,44 @@
 			};
 			name = Release;
 		};
+		A4D31CD524E457060082D798 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4479HNAQMJ;
+				INFOPLIST_FILE = SailorCacheIntegrationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.16;
+				PRODUCT_BUNDLE_IDENTIFIER = com.krezzi.SailorCacheIntegrationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A4D31CD624E457060082D798 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4479HNAQMJ;
+				INFOPLIST_FILE = SailorCacheIntegrationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.16;
+				PRODUCT_BUNDLE_IDENTIFIER = com.krezzi.SailorCacheIntegrationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -723,6 +834,15 @@
 			buildConfigurations = (
 				A4CCBAA624E0FA1100AF1E99 /* Debug */,
 				A4CCBAA724E0FA1100AF1E99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4D31CD424E457060082D798 /* Build configuration list for PBXNativeTarget "SailorCacheIntegrationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4D31CD524E457060082D798 /* Debug */,
+				A4D31CD624E457060082D798 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
