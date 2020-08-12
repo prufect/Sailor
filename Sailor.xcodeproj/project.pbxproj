@@ -37,6 +37,7 @@
 		A4D31CBC24E322390082D798 /* XCTestCase+FeedStoreSpecsHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D31CBB24E322390082D798 /* XCTestCase+FeedStoreSpecsHelpers.swift */; };
 		A4D31CCF24E457060082D798 /* SailorCacheIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D31CCE24E457060082D798 /* SailorCacheIntegrationTests.swift */; };
 		A4D31CD124E457060082D798 /* Sailor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CCBA6924DDB54400AF1E99 /* Sailor.framework */; };
+		A4D31CD724E459AA0082D798 /* XCTestCase+MemoryLeakTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CCBA9524E087CE00AF1E99 /* XCTestCase+MemoryLeakTracker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -485,6 +486,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4D31CCF24E457060082D798 /* SailorCacheIntegrationTests.swift in Sources */,
+				A4D31CD724E459AA0082D798 /* XCTestCase+MemoryLeakTracker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
