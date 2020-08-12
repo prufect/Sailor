@@ -61,6 +61,17 @@
                ReferencedContainer = "container:Sailor.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            testExecutionOrdering = "random">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A4D31CCB24E457060082D798"
+               BuildableName = "SailorCacheIntegrationTests.xctest"
+               BlueprintName = "SailorCacheIntegrationTests"
+               ReferencedContainer = "container:Sailor.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
