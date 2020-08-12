@@ -38,6 +38,8 @@
 		A4D31CCF24E457060082D798 /* SailorCacheIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D31CCE24E457060082D798 /* SailorCacheIntegrationTests.swift */; };
 		A4D31CD124E457060082D798 /* Sailor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CCBA6924DDB54400AF1E99 /* Sailor.framework */; };
 		A4D31CD724E459AA0082D798 /* XCTestCase+MemoryLeakTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CCBA9524E087CE00AF1E99 /* XCTestCase+MemoryLeakTracker.swift */; };
+		A4D31CD824E45B760082D798 /* FeedCacheTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B03F5D24E2011D001805AF /* FeedCacheTestHelpers.swift */; };
+		A4D31CD924E45BB00082D798 /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B03F5F24E2020D001805AF /* SharedTestHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -485,7 +487,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4D31CD924E45BB00082D798 /* SharedTestHelpers.swift in Sources */,
 				A4D31CCF24E457060082D798 /* SailorCacheIntegrationTests.swift in Sources */,
+				A4D31CD824E45B760082D798 /* FeedCacheTestHelpers.swift in Sources */,
 				A4D31CD724E459AA0082D798 /* XCTestCase+MemoryLeakTracker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
