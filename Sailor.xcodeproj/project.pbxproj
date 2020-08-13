@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		A4099A6624E4724600EAD2E2 /* SailoriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4099A5D24E4724600EAD2E2 /* SailoriOS.framework */; };
+		A4099A7524E5A6A100EAD2E2 /* FeedViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4099A7424E5A6A100EAD2E2 /* FeedViewControllerTests.swift */; };
+		A4099A7D24E5A9D300EAD2E2 /* Sailor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4CCBA6924DDB54400AF1E99 /* Sailor.framework */; };
+		A4099A7E24E5A9D300EAD2E2 /* Sailor.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4CCBA6924DDB54400AF1E99 /* Sailor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A4099A8224E5AB0100EAD2E2 /* XCTestCase+MemoryLeakTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CCBA9524E087CE00AF1E99 /* XCTestCase+MemoryLeakTracker.swift */; };
 		A49E809324E134E70095017C /* CacheFeedUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49E809224E134E70095017C /* CacheFeedUseCaseTests.swift */; };
 		A4AEA4E524E1B7BD00A51D98 /* LocalFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AEA4E424E1B7BD00A51D98 /* LocalFeedLoader.swift */; };
 		A4AEA4E724E1B85000A51D98 /* FeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AEA4E624E1B85000A51D98 /* FeedStore.swift */; };
@@ -51,6 +55,13 @@
 			remoteGlobalIDString = A4099A5C24E4724600EAD2E2;
 			remoteInfo = SailoriOS;
 		};
+		A4099A7F24E5A9D300EAD2E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4CCBA6024DDB54300AF1E99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4CCBA6824DDB54300AF1E99;
+			remoteInfo = Sailor;
+		};
 		A4CCBA7424DDB54400AF1E99 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A4CCBA6024DDB54300AF1E99 /* Project object */;
@@ -74,11 +85,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A4099A8124E5A9D300EAD2E2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A4099A7E24E5A9D300EAD2E2 /* Sailor.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		A4099A5D24E4724600EAD2E2 /* SailoriOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SailoriOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4099A6024E4724600EAD2E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4099A6524E4724600EAD2E2 /* SailoriOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SailoriOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4099A6C24E4724600EAD2E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4099A7424E5A6A100EAD2E2 /* FeedViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewControllerTests.swift; sourceTree = "<group>"; };
 		A49E809224E134E70095017C /* CacheFeedUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFeedUseCaseTests.swift; sourceTree = "<group>"; };
 		A4AEA4E424E1B7BD00A51D98 /* LocalFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedLoader.swift; sourceTree = "<group>"; };
 		A4AEA4E624E1B85000A51D98 /* FeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStore.swift; sourceTree = "<group>"; };
@@ -120,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4099A7D24E5A9D300EAD2E2 /* Sailor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,8 +204,16 @@
 			isa = PBXGroup;
 			children = (
 				A4099A6C24E4724600EAD2E2 /* Info.plist */,
+				A4099A7424E5A6A100EAD2E2 /* FeedViewControllerTests.swift */,
 			);
 			path = SailoriOSTests;
+			sourceTree = "<group>";
+		};
+		A4099A7624E5A8F500EAD2E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A49E809124E134CA0095017C /* Feed Cache */ = {
@@ -226,6 +261,7 @@
 				A4099A5E24E4724600EAD2E2 /* SailoriOS */,
 				A4099A6924E4724600EAD2E2 /* SailoriOSTests */,
 				A4CCBA6A24DDB54400AF1E99 /* Products */,
+				A4099A7624E5A8F500EAD2E2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -349,10 +385,12 @@
 				A4099A5924E4724600EAD2E2 /* Sources */,
 				A4099A5A24E4724600EAD2E2 /* Frameworks */,
 				A4099A5B24E4724600EAD2E2 /* Resources */,
+				A4099A8124E5A9D300EAD2E2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A4099A8024E5A9D300EAD2E2 /* PBXTargetDependency */,
 			);
 			name = SailoriOS;
 			productName = SailoriOS;
@@ -463,6 +501,7 @@
 					};
 					A4099A6424E4724600EAD2E2 = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 					A4CCBA6824DDB54300AF1E99 = {
 						CreatedOnToolsVersion = 12.0;
@@ -559,6 +598,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4099A7524E5A6A100EAD2E2 /* FeedViewControllerTests.swift in Sources */,
+				A4099A8224E5AB0100EAD2E2 /* XCTestCase+MemoryLeakTracker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,6 +669,11 @@
 			target = A4099A5C24E4724600EAD2E2 /* SailoriOS */;
 			targetProxy = A4099A6724E4724600EAD2E2 /* PBXContainerItemProxy */;
 		};
+		A4099A8024E5A9D300EAD2E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4CCBA6824DDB54300AF1E99 /* Sailor */;
+			targetProxy = A4099A7F24E5A9D300EAD2E2 /* PBXContainerItemProxy */;
+		};
 		A4CCBA7524DDB54400AF1E99 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A4CCBA6824DDB54300AF1E99 /* Sailor */;
@@ -667,6 +713,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -693,6 +740,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -702,6 +750,7 @@
 		A4099A7224E4724600EAD2E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4479HNAQMJ;
 				INFOPLIST_FILE = SailoriOSTests/Info.plist;
@@ -714,6 +763,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.krezzi.SailoriOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -722,6 +772,7 @@
 		A4099A7324E4724600EAD2E2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4479HNAQMJ;
 				INFOPLIST_FILE = SailoriOSTests/Info.plist;
@@ -1010,7 +1061,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.16;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.krezzi.SailorCacheIntegrationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
@@ -1030,7 +1081,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.16;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.krezzi.SailorCacheIntegrationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
